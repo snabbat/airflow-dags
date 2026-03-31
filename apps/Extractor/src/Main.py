@@ -34,7 +34,7 @@ if __name__ == '__main__':
         # Lancement du traitement d'extraction
         start_time = datetime.now()
         dataloader = DAGLoader(accessor_manager=accessor_manager, country="Maroc", vertical="SAHAM_BANK", exception_manager=exception_manager)
-        success = dataloader.execute(country="Maroc", phase="extraction", vertical="SAHAM_BANK")
+        success = dataloader.execute(country="Maroc", phase="extraction", vertical="SAHAM_BANK", target='conformite', system_target='fccr', flows=['dm_client_agreement_detail'])
         end_time = datetime.now()
         time_diff = end_time - start_time
         print("-----------------------------------------------------")
