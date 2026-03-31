@@ -1,0 +1,62 @@
+{
+    "country": "Maroc",
+    "verticals": {
+        "SAHAM_BANK": {
+            "disable": false,
+            "mandatory": false,
+            "phases": {
+                "extraction": {
+                    "disable": false,
+                    "target": {
+                        "conformite": {
+                            "disable": false,
+                            "system": {
+                                "fccr": {
+                                    "disable": false,
+                                    "flow": [
+                                        {"name": "dm_client_agreement_detail", "mandatory": false, "disable": false},
+                                        {"name": "dm_client_kyc_status", "mandatory": false, "disable": false},
+                                        {"name": "dm_transaction_alert_summary", "mandatory": false, "disable": false},
+                                        {"name": "dm_suspicious_activity_report", "mandatory": false, "disable": false}
+                                    ]
+                                },
+                                "alm": {
+                                    "disable": false,
+                                    "flow": [
+                                        {"name": "dm_liquidity_gap_analysis", "mandatory": false, "disable": false},
+                                        {"name": "dm_interest_rate_sensitivity", "mandatory": false, "disable": false},
+                                        {"name": "dm_maturity_mismatch_detail", "mandatory": false, "disable": false},
+                                        {"name": "dm_funding_concentration_ratio", "mandatory": false, "disable": false}
+                                    ]
+                                }
+                            }
+                        },
+                        "finance": {
+                            "disable": false,
+                            "system": {
+                                "rdj": {
+                                    "disable": false,
+                                    "flow": [
+                                        {"name": "dm_daily_balance_sheet", "mandatory": false, "disable": false},
+                                        {"name": "dm_general_ledger_entry", "mandatory": false, "disable": false},
+                                        {"name": "dm_cost_center_allocation", "mandatory": false, "disable": false},
+                                        {"name": "dm_intercompany_reconciliation", "mandatory": false, "disable": false}
+                                    ]
+                                },
+                                "renta": {
+                                    "disable": false,
+                                    "flow": [
+                                        {"name": "dm_product_profitability_detail", "mandatory": false, "disable": false},
+                                        {"name": "dm_branch_revenue_summary", "mandatory": false, "disable": false},
+                                        {"name": "dm_client_segment_margin", "mandatory": false, "disable": false},
+                                        {"name": "dm_fee_commission_breakdown", "mandatory": false, "disable": false}
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

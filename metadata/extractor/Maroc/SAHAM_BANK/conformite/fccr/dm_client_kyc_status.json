@@ -1,0 +1,14 @@
+{
+  "name": "vo_dm_client_kyc_status",
+  "domaine": "CONFORMITE",
+  "description": "KYC verification status and due diligence level per client",
+  "db_schemas": ["gold_saham_bank", "silver_saham_bank"],
+  "output": {
+    "type": "csv",
+    "delimiter": ";",
+    "header": true,
+    "sep_decim": ".",
+    "encoding": "UTF-8",
+    "mode": "overwrite"
+  }
+}

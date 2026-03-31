@@ -1,0 +1,27 @@
+from dag_manager.PhaseStrategy import PhaseStrategy
+
+
+class MartsPhase(PhaseStrategy):
+    # ALTERED: added target parameter to match PhaseStrategy signature
+    def build_tree(self, config, target=None, system_target=None, flows=None):
+        pass  # Peut être complété
+
+    # ALTERED: added full signature to match PhaseStrategy
+    def execute(self, country: str, vertical: str, target: str, system_target: str):
+        print(f"Executing Marts Phase in {self.recovery_mode} mode")
+        return self.root.execute(country, vertical, target, system_target)
+
+    # ALTERED: added full signature to match PhaseStrategy
+    def run_task_full(self, country: str, vertical: str, target: str, system_target: str, leaf_name: str):
+        print(f"[Marts FULL] Re-executing {leaf_name} fully.")
+        return True
+
+    # ALTERED: added full signature to match PhaseStrategy
+    def run_task_execution_plan_based(self, country: str, vertical: str, target: str, system_target: str, leaf_name: str):
+        print(f"[Marts PLAN-BASED] Executing {leaf_name} based on execution plan.")
+        return leaf_name != "flux1"  # Simule un échec sur "flux1"
+
+    # ALTERED: added full signature to match PhaseStrategy
+    def run_task_default(self, country: str, vertical: str, target: str, system_target: str, leaf_name: str):
+        print(f"[Marts Default] Processing {leaf_name}...")
+        return leaf_name != "flux1"

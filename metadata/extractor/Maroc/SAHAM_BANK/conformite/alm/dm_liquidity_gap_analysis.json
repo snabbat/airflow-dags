@@ -1,0 +1,14 @@
+{
+  "name": "vo_dm_liquidity_gap_analysis",
+  "domaine": "CONFORMITE",
+  "description": "Liquidity gap analysis between assets and liabilities by maturity bucket",
+  "db_schemas": ["gold_saham_bank", "silver_saham_bank"],
+  "output": {
+    "type": "csv",
+    "delimiter": ";",
+    "header": true,
+    "sep_decim": ".",
+    "encoding": "UTF-8",
+    "mode": "overwrite"
+  }
+}

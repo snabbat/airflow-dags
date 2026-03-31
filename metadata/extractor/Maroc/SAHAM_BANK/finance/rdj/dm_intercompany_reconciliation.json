@@ -1,0 +1,14 @@
+{
+  "name": "vo_dm_intercompany_reconciliation",
+  "domaine": "FINANCE",
+  "description": "Intercompany transaction reconciliation between group entities",
+  "db_schemas": ["gold_saham_bank", "silver_saham_bank"],
+  "output": {
+    "type": "csv",
+    "delimiter": ";",
+    "header": true,
+    "sep_decim": ".",
+    "encoding": "UTF-8",
+    "mode": "overwrite"
+  }
+}

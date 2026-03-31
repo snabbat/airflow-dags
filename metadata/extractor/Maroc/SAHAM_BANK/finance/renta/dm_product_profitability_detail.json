@@ -1,0 +1,14 @@
+{
+  "name": "vo_dm_product_profitability_detail",
+  "domaine": "FINANCE",
+  "description": "Profitability analysis per banking product including margin and cost of funds",
+  "db_schemas": ["gold_saham_bank", "silver_saham_bank"],
+  "output": {
+    "type": "csv",
+    "delimiter": ";",
+    "header": true,
+    "sep_decim": ".",
+    "encoding": "UTF-8",
+    "mode": "overwrite"
+  }
+}

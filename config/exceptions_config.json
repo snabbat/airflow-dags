@@ -1,0 +1,97 @@
+{
+    "FileNotFoundError": {
+        "id": "EX001",
+        "category": "IO",
+        "message": "Fichier introuvable — verifier le chemin du fichier metadata ou SQL"
+    },
+    "PermissionError": {
+        "id": "EX002",
+        "category": "IO",
+        "message": "Permission refusee — verifier les droits d'acces au fichier ou repertoire"
+    },
+    "KeyError": {
+        "id": "EX003",
+        "category": "CONFIG",
+        "message": "Cle manquante dans la configuration — verifier le fichier metadata ou shared_config"
+    },
+    "AttributeError": {
+        "id": "EX004",
+        "category": "CONFIG",
+        "message": "Attribut manquant — verifier que le metadata du flow contient les champs requis"
+    },
+    "TypeError": {
+        "id": "EX005",
+        "category": "DATA",
+        "message": "Type de donnee invalide — verifier les parametres passes aux fonctions"
+    },
+    "ValueError": {
+        "id": "EX006",
+        "category": "DATA",
+        "message": "Valeur invalide — verifier les donnees d'entree ou la configuration"
+    },
+    "ConnectionError": {
+        "id": "EX007",
+        "category": "NETWORK",
+        "message": "Erreur de connexion — verifier la connectivite reseau et les endpoints"
+    },
+    "TimeoutError": {
+        "id": "EX008",
+        "category": "NETWORK",
+        "message": "Delai d'attente depasse — verifier la disponibilite du service distant"
+    },
+    "Py4JJavaError": {
+        "id": "EX009",
+        "category": "SPARK",
+        "message": "Erreur Spark/JVM — verifier la requete SQL, la memoire ou la configuration Spark"
+    },
+    "AnalysisException": {
+        "id": "EX010",
+        "category": "SPARK",
+        "message": "Erreur d'analyse Spark SQL — verifier la syntaxe de la requete et l'existence des tables"
+    },
+    "IllegalArgumentException": {
+        "id": "EX015",
+        "category": "SPARK",
+        "message": "Argument invalide dans la requete Spark — verifier les parametres passes a la fonction SQL"
+    },
+    "StreamingQueryException": {
+        "id": "EX016",
+        "category": "SPARK",
+        "message": "Erreur Spark Streaming — verifier la source de donnees et la configuration du stream"
+    },
+    "SparkUpgradeException": {
+        "id": "EX017",
+        "category": "SPARK",
+        "message": "Incompatibilite de version Spark — verifier la compatibilite des fonctions SQL utilisees"
+    },
+    "QueryExecutionException": {
+        "id": "EX018",
+        "category": "SPARK",
+        "message": "Erreur d'execution de la requete Spark — verifier les donnees source et la logique SQL"
+    },
+    "JSONDecodeError": {
+        "id": "EX011",
+        "category": "CONFIG",
+        "message": "Erreur de parsing JSON — verifier la syntaxe du fichier metadata ou config"
+    },
+    "UnicodeDecodeError": {
+        "id": "EX012",
+        "category": "DATA",
+        "message": "Erreur d'encodage — verifier l'encodage du fichier source (UTF-8 attendu)"
+    },
+    "OSError": {
+        "id": "EX013",
+        "category": "IO",
+        "message": "Erreur systeme — verifier l'espace disque et les permissions"
+    },
+    "RuntimeError": {
+        "id": "EX014",
+        "category": "RUNTIME",
+        "message": "Erreur d'execution — verifier les logs pour plus de details"
+    },
+    "default_error": {
+        "id": "EX999",
+        "category": "UNKNOWN",
+        "message": "Erreur non repertoriee — consulter la stack trace pour diagnostiquer"
+    }
+}

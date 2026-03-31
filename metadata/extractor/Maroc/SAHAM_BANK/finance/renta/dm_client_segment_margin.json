@@ -1,0 +1,14 @@
+{
+  "name": "vo_dm_client_segment_margin",
+  "domaine": "FINANCE",
+  "description": "Margin contribution analysis by client segment (retail, corporate, SME)",
+  "db_schemas": ["gold_saham_bank", "silver_saham_bank"],
+  "output": {
+    "type": "csv",
+    "delimiter": ";",
+    "header": true,
+    "sep_decim": ".",
+    "encoding": "UTF-8",
+    "mode": "overwrite"
+  }
+}

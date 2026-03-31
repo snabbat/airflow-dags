@@ -1,0 +1,14 @@
+{
+  "name": "vo_dm_general_ledger_entry",
+  "domaine": "FINANCE",
+  "description": "General ledger journal entries with debit/credit details",
+  "db_schemas": ["gold_saham_bank", "silver_saham_bank"],
+  "output": {
+    "type": "csv",
+    "delimiter": ";",
+    "header": true,
+    "sep_decim": ".",
+    "encoding": "UTF-8",
+    "mode": "overwrite"
+  }
+}

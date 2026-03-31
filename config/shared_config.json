@@ -1,0 +1,38 @@
+{
+    "global_config": {
+        "data_root":"s3a://data",
+        "data_output_root": "data/tmp/data_output",
+        "extractor_metadata_root": "metadata/extractor",
+        "data_retention_root": "data/retention",
+        "param_root": "config/parameters",
+        "exceptions_config": "config/exceptions_config.json",
+        "landing_root": "data/Landing"
+    },
+
+    "runtime_config": {
+        "execution_date": "20260227",
+        "Date_retention": "20260227"
+    },
+
+    "s3_config": {
+        "host_name": "https://object-dev-store.sgmaroc.root.net",
+        "access_key": "bOBS3oFgYo0eqMHxrObi5Wuu5vn56Pya",
+        "secret_access_key": "Xs5qF1XsIdlVON1gzxtFZo7LiWmM-Unl",
+        "port": "9000",
+        "raw_bucket_name": "data",
+        "warehouse_bucket": "bronze"
+    },
+
+    "hms_config" : {
+        "uri": "thrift://hive-metastore.hive-metastore.svc.cluster.local:9083"
+    },
+
+    "spark_config" : {
+        "master": "spark://spark-master-0.spark-headless.spark.svc.cluster.local:7077",
+        "_original_app_name": "Ingestion_By_Souf",
+        "app_name": "Extraction_By_Souf",
+        "_original_jar_dir":"/home/coder/.coder-venv/lib/python3.12/site-packages/pyspark/jars",
+        "jar_dir":"C:/Users/souf_/AppData/Local/Programs/Python/Python313/Lib/site-packages/pyspark/jars"
+    }
+    
+}
